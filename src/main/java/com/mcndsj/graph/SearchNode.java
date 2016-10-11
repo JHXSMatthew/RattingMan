@@ -1,7 +1,5 @@
 package com.mcndsj.graph;
 
-import java.util.Comparator;
-
 /**
  * Created by Matthew on 21/06/2016.
  */
@@ -21,13 +19,13 @@ public class SearchNode implements Comparable {
         }
     }
 
-    public boolean hasGone(String name){
+    public boolean hasBeen(String name){
             if(current.equals(name)){
                 return true;
             }else if(last == null){
                 return false;
             }else{
-                return last.hasGone(name);
+                return last.hasBeen(name);
             }
 
     }

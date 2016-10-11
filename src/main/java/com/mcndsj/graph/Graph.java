@@ -64,7 +64,7 @@ public class Graph {
                 if(!connections.containsKey(s)){
                     continue;
                 }
-                if(current.hasGone(s)){
+                if(current.hasBeen(s)){
                     continue;
                 }
                 queue.add(new SearchNode(current,s));
